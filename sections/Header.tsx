@@ -21,6 +21,7 @@ export interface Nav {
     }[];
     buttons: CTA[];
   };
+  cor?: string;
 }
 
 export default function Header({
@@ -73,9 +74,8 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
-                  item.outline && "btn-outline"
-                }`}
+                class={`font-normal btn btn-primary ${item.outline && "btn-outline"
+                  }`}
               >
                 {item?.text}
               </a>
@@ -127,9 +127,8 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
-                  item.outline && "btn-outline"
-                }`}
+                class={`font-normal btn btn-primary ${item.outline && "btn-outline"
+                  }`}
               >
                 {item?.text}
               </a>
